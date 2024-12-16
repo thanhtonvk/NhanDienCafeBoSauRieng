@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhận diện bệnh cây trồng</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        background-image: url({{url_for("static", filename= "background.jpg")}});
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      h1 {
+        color:whitesmoke;
+            text-align: center; /* Căn giữa theo chiều ngang */
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1>ỨNG DỤNG TRÍ TUỆ NHÂN TẠO PHÁT HIỆN BỆNH VÀ LẬP PHÁC ĐỒ ĐIỀU TRỊ CHO CÂY CÀ PHÊ & SẦU RIÊNG & BƠ</h1>
+      <div class="row">
+        <!-- Bên phải: Nhận diện bệnh cafe -->
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header bg-warning text-white">
+              Nhận diện bệnh lá cafe
+            </div>
+            <div class="card-body">
+              <form
+                action="/la-cafe"
+                method="post"
+                enctype="multipart/form-data"
+              >
+                <div class="form-group">
+                  <label for="beanDiseaseFile"
+                    >Tải lên hình ảnh lá cafe:</label
+                  >
+                  <input
+                    name="fileCafe"
+                    type="file"
+                    class="form-control-file"
+                    id="beanDiseaseFile"
+                  />
+                </div>
+                <button type="submit" class="btn btn-warning btn-block">
+                  Dự đoán lá cafe
+                </button>
+              </form>
+              {%if data%} {% if data['type']==5 %}
+              <p>{{data['result']}}</p>
+              <p>{{data['chua_benh']}}</p>
+              <img
+              height="300"
+                src="data:image/jpeg;base64,{{ data['image_path'] }}"
+                alt="img_data"
+                id="imgslot"
+              
+              />
+              {% endif %} {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <!-- Bên phải: Nhận diện bệnh sau rieng -->
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header bg-danger text-white">
+              Nhận diện bệnh lá Sầu riêng
+            </div>
+            <div class="card-body">
+              <form
+                action="/la-sau-rieng"
+                method="post"
+                enctype="multipart/form-data"
+              >
+                <div class="form-group">
+                  <label for="beanDiseaseFile"
+                    >Tải lên hình ảnh lá Sầu riêng:</label
+                  >
+                  <input
+                    name="fileSauRieng"
+                    type="file"
+                    class="form-control-file"
+                    id="beanDiseaseFile"
+                  />
+                </div>
+                <button type="submit" class="btn btn-danger btn-block">
+                  Dự đoán lá Sầu riêng
+                </button>
+              </form>
+              {%if data%} {% if data['type']==0 %}
+              <p>{{data['result']}}</p>
+              <p>{{data['chua_benh']}}</p>
+              <img
+              height="300"
+                src="data:image/jpeg;base64,{{ data['image_path'] }}"
+                alt="img_data"
+                id="imgslot"
+              
+              />
+              {% endif %} {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <!-- Bên phải: Nhận diện bệnh bo -->
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header bg-success text-white">
+              Nhận diện bệnh lá bơ
+            </div>
+            <div class="card-body">
+              <form
+                action="/la-bo"
+                method="post"
+                enctype="multipart/form-data"
+              >
+                <div class="form-group">
+                  <label for="beanDiseaseFile"
+                    >Tải lên hình ảnh lá bơ</label
+                  >
+                  <input
+                    name="fileBo"
+                    type="file"
+                    class="form-control-file"
+                    id="beanDiseaseFile"
+                  />
+                </div>
+                <button type="submit" class="btn btn-success btn-block">
+                  Dự đoán lá bơ
+                </button>
+              </form>
+              {%if data%} {% if data['type']==1 %}
+              <p>{{data['result']}}</p>
+              <p>{{data['chua_benh']}}</p>
+              <img
+              height="300"
+                src="data:image/jpeg;base64,{{ data['image_path'] }}"
+                alt="img_data"
+                id="imgslot"
+              
+              />
+              {% endif %} {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+</html>
