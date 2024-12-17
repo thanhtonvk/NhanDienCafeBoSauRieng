@@ -3,8 +3,9 @@ from modules.NhanDienSauRieng import predictSauRieng
 from modules.NhanDienCayBo import predictBo
 import cv2
 import os
-from flask import Flask, render_template, request, redirect, jsonify
+from flask import Flask, render_template, request, redirect, jsonify, Response
 from unidecode import unidecode
+import json
 
 app = Flask(__name__)
 f = open("chua_benh/cafe.txt", "r", encoding="utf-8")
@@ -20,7 +21,7 @@ f.close()
 
 f = open("chua_benh/bo.txt", "r", encoding="utf-8")
 lines = f.read()
-chua_benh_bo= lines.split("#")
+chua_benh_bo = lines.split("#")
 f.close()
 import base64
 
@@ -140,7 +141,7 @@ def la_bo():
     save_path = f"static/image.png"
     f.save(save_path)
     image = cv2.imread(save_path)
-    idx,score,nhan_label = predictBo(image)
+    idx, score, nhan_label = predictBo(image)
     result = ""
 
     result += f"{nhan_label} - {int(score*100)}% \n"
@@ -157,9 +158,65 @@ def la_bo():
     }
     return render_template("index.html", data=response)
 
+
 @app.route("/", methods=["GET"])
 def index():
     return render_template("index.html", data=None)
+
+
+@app.route("/api/la-cafe", methods=["POST"])
+def api_cafe():
+    f = request.files["image"]
+    save_path = f"static/image.png"
+    f.save(save_path)
+    image = cv2.imread(save_path)
+    boxes, classes, scores, nhan_label = predictCafe(image)
+    result = ""
+    for box, cls, score in zip(boxes, classes, scores):
+        result += f"{cls} - {int(score*100)}% \n"
+    if len(classes) > 0:
+        chua_benh = chua_benh_cafe[nhan_label[0]]
+    else:
+        chua_benh = "Khoẻ mạnh"
+    final =  result+"\n"+chua_benh
+    return final
+
+
+@app.route("/api/la-sau-rieng", methods=["POST"])
+def api_sau_rieng():
+    f = request.files["image"]
+    save_path = f"static/image.png"
+    f.save(save_path)
+    image = cv2.imread(save_path)
+    boxes, classes, scores, nhan_label = predictSauRieng(image)
+    result = ""
+    for box, cls, score in zip(boxes, classes, scores):
+        result += f"{cls} - {int(score*100)}% \n"
+    if len(classes) > 0:
+        chua_benh = chua_benh_sau_rieng[nhan_label[0]]
+    else:
+        chua_benh = "Khoẻ mạnh"
+    response = {
+        "result": result,
+        "chua_benh": chua_benh,
+    }
+    final =  result+"\n"+chua_benh
+    return final
+
+
+@app.route("/api/la-bo", methods=["POST"])
+def api_la_bo():
+    f = request.files["image"]
+    save_path = f"static/image.png"
+    f.save(save_path)
+    image = cv2.imread(save_path)
+    idx, score, nhan_label = predictBo(image)
+    result = ""
+    result += f"{nhan_label} - {int(score*100)}% \n"
+
+    chua_benh = chua_benh_bo[idx]
+    final =  result+"\n"+chua_benh
+    return final
 
 
 import socket
