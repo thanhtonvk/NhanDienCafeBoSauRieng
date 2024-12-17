@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "328618769365",
+    "firebase_url": "https://hello-e4ff8-default-rtdb.firebaseio.com",
+    "project_id": "hello-e4ff8",
+    "storage_bucket": "hello-e4ff8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328618769365:android:1f147db9a9da99f2805b5c",
+        "android_client_info": {
+          "package_name": "com.tondz.nhan_dien_cay_benh_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIs_Q96HVbC2NslgsQo5fq09BHj0W4cUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328618769365:android:ee573447f4334a01805b5c",
+        "android_client_info": {
+          "package_name": "com.tondz.tieng_dan_toc.dich_tieng_dan_toc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIs_Q96HVbC2NslgsQo5fq09BHj0W4cUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
