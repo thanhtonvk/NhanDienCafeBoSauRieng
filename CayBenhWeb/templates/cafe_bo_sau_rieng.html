@@ -25,36 +25,36 @@
   </head>
   <body>
     <div class="container mt-5">
-      <h1>ỨNG DỤNG TRÍ TUỆ NHÂN TẠO PHÁT HIỆN BỆNH VÀ LẬP PHÁC ĐỒ ĐIỀU TRỊ CHO CÂY CAM</h1>
+      <h1>ỨNG DỤNG TRÍ TUỆ NHÂN TẠO PHÁT HIỆN BỆNH VÀ LẬP PHÁC ĐỒ ĐIỀU TRỊ CHO CÂY CÀ PHÊ & SẦU RIÊNG & BƠ</h1>
       <div class="row">
-      
+        <!-- Bên phải: Nhận diện bệnh cafe -->
         <div class="col-md-12">
           <div class="card">
             <div class="card-header bg-warning text-white">
-              Nhận diện bệnh lá cam
+              Nhận diện bệnh lá cafe
             </div>
             <div class="card-body">
               <form
-                action="/la-cam"
+                action="/la-cafe"
                 method="post"
                 enctype="multipart/form-data"
               >
                 <div class="form-group">
                   <label for="beanDiseaseFile"
-                    >Tải lên hình ảnh lá cam:</label
+                    >Tải lên hình ảnh lá cafe:</label
                   >
                   <input
-                    name="fileLaCam"
+                    name="fileCafe"
                     type="file"
                     class="form-control-file"
                     id="beanDiseaseFile"
                   />
                 </div>
                 <button type="submit" class="btn btn-warning btn-block">
-                  Dự đoán lá cam
+                  Dự đoán lá cafe
                 </button>
               </form>
-              {%if data%} {% if data['type']==2 %}
+              {%if data%} {% if data['type']==5 %}
               <p>{{data['result']}}</p>
               <p>{{data['chua_benh']}}</p>
               <img
@@ -72,33 +72,79 @@
 
 
       <div class="row">
+        <!-- Bên phải: Nhận diện bệnh sau rieng -->
         <div class="col-md-12">
           <div class="card">
             <div class="card-header bg-danger text-white">
-              Nhận diện bệnh quả cam
+              Nhận diện bệnh lá Sầu riêng
             </div>
             <div class="card-body">
               <form
-                action="/qua-cam"
+                action="/la-sau-rieng"
                 method="post"
                 enctype="multipart/form-data"
               >
                 <div class="form-group">
                   <label for="beanDiseaseFile"
-                    >Tải lên hình ảnh quả cam:</label
+                    >Tải lên hình ảnh lá Sầu riêng:</label
                   >
                   <input
-                    name="fileQuaCam"
+                    name="fileSauRieng"
                     type="file"
                     class="form-control-file"
                     id="beanDiseaseFile"
                   />
                 </div>
                 <button type="submit" class="btn btn-danger btn-block">
-                  Dự đoán quả cam
+                  Dự đoán lá Sầu riêng
                 </button>
               </form>
-              {%if data%} {% if data['type']==3 %}
+              {%if data%} {% if data['type']==0 %}
+              <p>{{data['result']}}</p>
+              <p>{{data['chua_benh']}}</p>
+              <img
+              height="300"
+                src="data:image/jpeg;base64,{{ data['image_path'] }}"
+                alt="img_data"
+                id="imgslot"
+              
+              />
+              {% endif %} {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <!-- Bên phải: Nhận diện bệnh bo -->
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header bg-success text-white">
+              Nhận diện bệnh lá bơ
+            </div>
+            <div class="card-body">
+              <form
+                action="/la-bo"
+                method="post"
+                enctype="multipart/form-data"
+              >
+                <div class="form-group">
+                  <label for="beanDiseaseFile"
+                    >Tải lên hình ảnh lá bơ</label
+                  >
+                  <input
+                    name="fileBo"
+                    type="file"
+                    class="form-control-file"
+                    id="beanDiseaseFile"
+                  />
+                </div>
+                <button type="submit" class="btn btn-success btn-block">
+                  Dự đoán lá bơ
+                </button>
+              </form>
+              {%if data%} {% if data['type']==1 %}
               <p>{{data['result']}}</p>
               <p>{{data['chua_benh']}}</p>
               <img

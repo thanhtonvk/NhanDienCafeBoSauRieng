@@ -1,0 +1,58 @@
+0: Đốm đen
+Giải thích:
+Bệnh đốm đen gây ra các đốm đen hoặc nâu trên lá, quả hoặc cành cây. Các đốm thường có viền vàng, làm giảm khả năng quang hợp và ảnh hưởng đến chất lượng quả.
+Nguyên nhân:
+Nhiễm nấm Guignardia citricarpa.
+Điều kiện môi trường ẩm ướt và thoát nước kém.
+Lây lan qua bào tử từ các lá, quả rụng.
+Cách điều trị:
+Vệ sinh vườn cây: Thu gom và tiêu hủy lá, quả rụng để giảm nguồn bệnh.
+Phun thuốc trừ nấm: Sử dụng thuốc có hoạt chất Mancozeb, Copper Oxychloride hoặc Azoxystrobin.
+Tăng cường dinh dưỡng: Bón phân cân đối giàu kali và vi lượng để tăng sức đề kháng cho cây.
+#
+1: Tàn nhang
+Giải thích:
+Tàn nhang trên lá thường xuất hiện dưới dạng các đốm nhỏ màu nâu sẫm hoặc vàng. Bệnh làm giảm sức khỏe của cây và ảnh hưởng đến năng suất.
+Nguyên nhân:
+Nhiễm nấm Alternaria hoặc Cercospora.
+Độ ẩm cao, mưa kéo dài.
+Cây yếu hoặc thiếu dinh dưỡng.
+Cách điều trị:
+Phun thuốc phòng bệnh: Dùng dung dịch Bordeaux hoặc thuốc gốc đồng (Copper Hydroxide).
+Cắt tỉa lá bệnh: Loại bỏ lá có dấu hiệu nhiễm bệnh để hạn chế lây lan.
+Cải thiện thông thoáng: Tăng cường ánh sáng và không khí lưu thông trong vườn.
+#
+2: Xanh hóa (Greening)
+Giải thích:
+Bệnh xanh hóa là bệnh nguy hiểm do vi khuẩn gây ra, khiến lá cây vàng và nhỏ, nhưng gân lá vẫn xanh. Bệnh làm rụng quả sớm, quả nhỏ và vị đắng.
+Nguyên nhân:
+Vi khuẩn Candidatus Liberibacter gây ra.
+Lây lan qua rầy chổng cánh (Diaphorina citri).
+Cách điều trị:
+Kiểm soát rầy chổng cánh: Sử dụng thuốc trừ sâu như Imidacloprid hoặc Thiamethoxam.
+Cắt tỉa và tiêu hủy cây bệnh: Loại bỏ các cây nhiễm bệnh nặng để tránh lây lan.
+Sử dụng cây giống sạch bệnh: Trồng cây giống được kiểm dịch và xử lý trước khi đưa vào vườn.
+#
+3: Khỏe mạnh
+Giải thích:
+Lá cây khỏe mạnh có màu xanh đậm, bóng, không có dấu hiệu bệnh hoặc tổn thương. Cây sinh trưởng tốt, năng suất cao.
+Nguyên nhân:
+Được chăm sóc đúng kỹ thuật, đủ dinh dưỡng.
+Không bị sâu bệnh tấn công.
+Đất trồng và điều kiện khí hậu phù hợp.
+Cách duy trì:
+Bón phân cân đối, ưu tiên phân hữu cơ và phân vi sinh.
+Thường xuyên kiểm tra và phòng bệnh định kỳ bằng thuốc bảo vệ thực vật an toàn.
+Tưới tiêu hợp lý, tránh úng hoặc khô hạn.
+#
+4: Hắc tố
+Giải thích:
+Bệnh hắc tố gây ra các vết đen hoặc nâu sẫm trên lá, thân và quả, làm giảm khả năng quang hợp và ảnh hưởng đến giá trị thương mại của quả.
+Nguyên nhân:
+Nhiễm nấm Phyllosticta citricarpa.
+Lây lan qua nước mưa, bào tử nấm từ lá hoặc quả bệnh.
+Điều kiện ẩm cao, cây yếu.
+Cách điều trị:
+Phun thuốc trừ nấm: Sử dụng Carbendazim hoặc Mancozeb.
+Cắt tỉa và vệ sinh: Loại bỏ lá và quả nhiễm bệnh, vệ sinh vườn thường xuyên.
+Kiểm soát độ ẩm: Cải thiện thoát nước, hạn chế độ ẩm quá cao trong vườn.

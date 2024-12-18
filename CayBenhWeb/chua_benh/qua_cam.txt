@@ -1,0 +1,47 @@
+0: Đốm đen
+Giải thích:
+Bệnh đốm đen gây các vết đen hoặc nâu sẫm trên bề mặt quả, thường có viền vàng bao quanh. Các vết đốm có thể liên kết thành mảng, làm giảm giá trị thương phẩm của quả.
+Nguyên nhân:
+Nấm Guignardia citricarpa gây ra.
+Điều kiện thời tiết ẩm ướt, mưa nhiều và thoát nước kém.
+Lây lan qua bào tử từ quả, lá, hoặc cành bị nhiễm bệnh.
+Cách điều trị:
+Vệ sinh vườn: Thu gom và tiêu hủy quả rụng, cành lá bệnh.
+Phun thuốc bảo vệ thực vật: Sử dụng các thuốc trừ nấm như Copper Oxychloride, Mancozeb hoặc Azoxystrobin.
+Cải thiện quản lý nước: Hạn chế tình trạng ẩm ướt kéo dài bằng cách thoát nước tốt và cắt tỉa cây thông thoáng.
+#
+1: Xanh hóa (Greening)
+Giải thích:
+Quả bị bệnh xanh hóa có kích thước nhỏ, méo mó, màu xanh không đều, thịt quả chua và không thể sử dụng. Quả thường rụng sớm, ảnh hưởng nghiêm trọng đến năng suất.
+Nguyên nhân:
+Vi khuẩn Candidatus Liberibacter gây bệnh.
+Lây lan qua rầy chổng cánh (Diaphorina citri).
+Điều kiện môi trường và chăm sóc cây không tốt khiến bệnh lây lan nhanh.
+Cách điều trị:
+Kiểm soát rầy chổng cánh: Phun thuốc trừ sâu như Imidacloprid hoặc Thiamethoxam.
+Loại bỏ cây bệnh: Cắt bỏ và tiêu hủy các cây nhiễm bệnh nặng để ngăn ngừa lây lan.
+Trồng cây giống sạch bệnh: Sử dụng giống cây đã qua kiểm dịch và xử lý sạch bệnh trước khi trồng.
+#
+2: Ghẻ
+Giải thích:
+Bệnh ghẻ gây các vết lồi màu nâu hoặc vàng trên vỏ quả, khiến quả sần sùi, mất thẩm mỹ. Khi bệnh nặng, quả có thể bị nứt, ảnh hưởng đến chất lượng.
+Nguyên nhân:
+Nấm Elsinoe fawcettii hoặc Elsinoe australis gây bệnh.
+Lây lan qua gió, nước mưa hoặc dụng cụ không vệ sinh.
+Độ ẩm cao và cây trồng quá dày.
+Cách điều trị:
+Phun thuốc phòng bệnh: Sử dụng thuốc chứa Copper Hydroxide, Mancozeb hoặc Carbendazim.
+Vệ sinh vườn cây: Cắt tỉa cành lá nhiễm bệnh và tiêu hủy đúng cách.
+Giảm độ ẩm: Cải thiện hệ thống tưới tiêu và giữ vườn thông thoáng.
+#
+3: Bọ trĩ
+Giải thích:
+Bọ trĩ gây tổn thương bề mặt quả bằng cách hút nhựa cây. Vết cắn làm quả xuất hiện các đường hoặc mảng màu xám, nâu, làm giảm giá trị thương phẩm. Khi nặng, quả bị rụng.
+Nguyên nhân:
+Bọ trĩ (Scirtothrips citri hoặc Frankliniella occidentalis).
+Thời tiết khô nóng là điều kiện thuận lợi cho bọ trĩ phát triển.
+Quản lý cây không đúng cách dẫn đến mật độ bọ trĩ cao.
+Cách điều trị:
+Kiểm soát bọ trĩ: Phun thuốc trừ sâu có hoạt chất Abamectin, Spinosad hoặc Imidacloprid.
+Vệ sinh vườn cây: Loại bỏ các lá, cành khô để giảm nơi trú ẩn của bọ trĩ.
+Bẫy màu xanh hoặc vàng: Dùng bẫy dính màu để giảm mật độ bọ trĩ trong vườn.
