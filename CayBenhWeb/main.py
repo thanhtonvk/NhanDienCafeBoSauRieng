@@ -94,13 +94,13 @@ def la_cafe():
         "type": 5,
         "chua_benh": chua_benh,
     }
-    return render_template("index.html", data=response)
+    return render_template("cafe_bo_sau_rieng.html", data=response)
 
 
 @app.route("/la-sau-rieng", methods=["GET", "POST"])
 def la_sau_rieng():
     if request.method == "GET":
-        return render_template("index.html", data=None)
+        return render_template("cafe_bo_sau_rieng.html", data=None)
     f = request.files["fileSauRieng"]
     save_path = f"static/image.png"
     f.save(save_path)
@@ -275,12 +275,12 @@ def la_bo():
         "type": 1,
         "chua_benh": chua_benh,
     }
-    return render_template("index.html", data=response)
+    return render_template("cafe_bo_sau_rieng.html", data=response)
 
 
 @app.route("/", methods=["GET"])
 def index():
-    return render_template("index.html", data=None)
+    return render_template("cafe_bo_sau_rieng.html", data=None)
 
 
 @app.route("/api/la-cafe", methods=["POST"])
